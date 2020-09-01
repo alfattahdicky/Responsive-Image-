@@ -3,23 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Image | Part 1 Zoom Effect</title>
+  <title>Responsive Image | Part 2 Lightbox Image</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <div class="img">
-      <img src="./preview/beatiful-sea-preview.jpg" alt="Beatiful Sea">
+      <img src="./preview/beatiful-sea-preview.jpg" alt="Beatiful Sea" data-original="./full/beatiful-sea-full.jpg">
     </div>
     <div class="img">
-      <img src="./preview/house-land-preview.jpg" alt="House Land">
+      <img src="./preview/house-land-preview.jpg" alt="House Land" data-original="./full/house-land-full.jpg">
     </div>
     <div class="img">
-      <img src="./preview/wave-sea-preview.jpg" alt="Wave Sea">
+      <img src="./preview/wave-sea-preview.jpg" alt="Wave Sea" data-original="./full/wave-sea-full.jpg">
     </div>
     <div class="img">
-      <img src="./preview/workbench-preview.jpg" alt="WorkBench at Home">
+      <img src="./preview/workbench-preview.jpg" alt="WorkBench at Home" data-original="./full/workbench-full.jpg">
     </div>
   </div>
+  <div class="modal">
+    <img src="./full/beatiful-sea-full.jpg" alt="Beatiful Sea" class="full-img">
+    <p class="caption">Hello World</p>
+  </div>
+  <script src="app.js"></script>
 </body>
 </html>
